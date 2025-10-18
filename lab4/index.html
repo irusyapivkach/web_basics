@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота 4</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Лабораторна робота 4</h1>
+    
+    <form action="https://httpbin.org/get" method="GET">
+        <div>
+            <label for="fullName">Повне ім'я:</label>
+            <input type="text" id="fullName" name="fullName">
+        </div>
+        
+        <div>
+            <label>
+                Email:
+                <input type="email" name="email">
+            </label>
+        </div>
+        
+        <div>
+            <label for="birthDate">Дата народження:</label>
+            <input type="date" id="birthDate" name="birthDate">
+        </div>
+        
+        <div>
+            <label>
+                Додаткова інформація:
+                <textarea name="additionalInfo"></textarea>
+            </label>
+        </div>
+        
+        <div>
+            <label>Ваші улюблені напої?</label>
+            <div>
+                <label><input type="checkbox" name="drinks" value="coffee">Кава</label>
+                <label><input type="checkbox" name="drinks" value="tea">Чай</label>
+                <label><input type="checkbox" name="drinks" value="juice">Сік</label>
+                <label><input type="checkbox" name="drinks" value="water">Вода</label>
+            </div>
+        </div>
+        
+        <div>
+            <label>Моя національність:</label>
+            <div>
+                <label><input type="radio" name="nationality" value="ukrainian">Українець/Українка</label>
+                <label><input type="radio" name="nationality" value="other">Інша</label>
+                <label><input type="radio" name="nationality" value="prefer_not_to_say">Не вказую</label>
+            </div>
+        </div>
+        
+        <div>
+            <button type="submit">Відправити</button>
+            <button type="reset">Очистити</button>
+        </div>
+    </form>
+    
+    <picture>
+        <source media="(max-width: 467px)" srcset="https://picsum.photos/300/500">
+        <img src="https://picsum.photos/1000/400" alt="Зображення">
+    </picture>
+    
+    <script src="script.js"></script>
+</body>
+</html>
